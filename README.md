@@ -8,7 +8,7 @@
 
 ### Canvas
 * http://www.tutorialesprogramacionya.com/htmlya/html5/temarios/descripcion.php?cod=152&punto=20&inicio=1
-* [Introducción] (http://w3.unpocodetodo.info/canvas/introduccion.php)
+* [Introducción](http://w3.unpocodetodo.info/canvas/introduccion.php)
 
 
 
