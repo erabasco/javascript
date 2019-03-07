@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Rafael Á. Sojo Ruíz">
+    <title>Factura</title>
+    <script src="clases.js"></script>
+    <script src="factura.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            Fecha: <input type="date" id="fecha"> <br />
+            Moneda: <input type="text" id="moneda" value="Euros" disabled>
+        </div>
+        <div>
+            <h2>Empresa</h2>
+            Nombre: <input type="text" id="nombreEmpresa" value="MiEmpresa S.L."> <br />
+            CIF: <input type="text" id="cifEmpresa" value="0000000-a"> <br />
+            Dirección: <input type="text" id="direccionEmpresa" value="C:/Windows"> <br />
+            Email: <input type="text" id="emailEmpresa" value="correo@miempresa.es"> <br />
+            Teléfono: <input type="text" id="telefonoEmpresa" value="987555661"> <br />
+            <button id="guardarDatosEmpresa">Guardar</button>
+            <button id="limpiarDatosEmpresa">Limpiar datos</button>
+            <h2>Cliente</h2>
+            Nombre: <input type="text" id="nombreCliente" value="Pepito Perez"> <br />
+            CIF: <input type="text" id="cifCliente" value="11111111-a"> <br />
+            Dirección: <input type="text" id="direccionCliente" value="Calle sin número, 2"> <br />
+            Email: <input type="text" id="emailCliente" value="cliente@pepitoperez.es"> <br />
+            Teléfono: <input type="text" id="telefonoCliente" value="654712458"> <br />
+            <button id="guardarDatosCliente">Guardar</button>
+            <button id="limpiarDatosCliente">Limpiar datos</button>
+        </div>
+
+        <div>
+            <h2>Crear linea:</h2>
+            <table>
+                <tr>
+                    <td>Producto</td>
+                    <td>Unidades</td>
+                    <td>Precio</td>
+                    <td>Iva</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nuevoProducto"></td>
+                    <td><input type="text" id="nuevoUnidades"></td>
+                    <td><input type="text" id="nuevoPrecio"></td>
+                    <td><input type="text" id="nuevoIVA"></td>
+                </tr>
+            </table>
+            <button id="nuevaLinea">Nueva linea</button>
+        </div>
+        <div>
+            <table id="tablaLineas">
+                <tr>
+                    <td>Producto</td>
+                    <td>Unidades</td>
+                    <td>Precio</td>
+                    <td>Iva</td>
+                    <td>Importe</td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+        <div>
+            Observaciones: <br />
+            <textarea id="observaciones" cols="30" rows="10"></textarea> <br />
+            <button id="crearFactura">Crear factura</button>
+        </div>
+
+    </main>
+</body>
+
+</html>
