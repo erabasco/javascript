@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Ejercicio </title>
+       <link rel="stylesheet" href="styles.css">
+    <body>
+        <header>
+            <hgroup> <h1 id="formato">Clínica Dental Trassierra</h1></hgroup>
+        </header>
+        <section id="Datos">
+            <form>
+               
+                <fieldset id="consultas">
+                    <legend>Consultas -Horarios</legend>
+                   
+                </fieldset>
+                <fieldset id="entradaDatos">
+                    <legend>Entrada de datos</legend>
+                    <ol>
+                        <li>
+                            <label for="numPac">Nº Paciente:</label>
+                            <input type="text" id="numPac" maxlength=2></input><span id="errorPac"></span>
+                        </li>
+                        <li>
+                            <label for="nombre">Nombre y apellidos:</label>
+                            <input type="text" id="nombre"></input><span id="errorNom"></span>
+                        </li>
+                        <li>
+                            <label for="genero">Género:</label>
+                            <input type="text" id="genero"></input><span id="errorGen"></span>
+                        </li>
+                       
+                       <br>
+                        <input type="button" id="guardar" value="guardar">
+                        <input type="button" id="cancelar" value="cancelar">
+                    </ol>
+                </fieldset>            
+            </form>
+        </section>
+       <script src="script.js"></script>
+    </body>
+
+</html>
